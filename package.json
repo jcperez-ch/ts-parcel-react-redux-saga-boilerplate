@@ -1,0 +1,49 @@
+{
+  "name": "automatai",
+  "version": "1.0.0",
+  "description": "Automat.ai Homework",
+  "main": "src/index.js",
+  "scripts": {
+    "develop": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url '/'",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "test": "jest --config jest.config.json",
+    "test:watch": "jest --config jest.config.json --watch"
+  },
+  "author": "JC Perez <jc.perezchavez@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "emotion": "^9.1.3",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-emotion": "^9.1.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "regenerator-runtime": "^0.11.1",
+    "reset-css": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.10",
+    "@types/jest": "^23.0.0",
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "^6.0.1",
+    "@types/redux-saga": "^0.10.5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.1.0",
+    "parcel-bundler": "^1.8.1",
+    "parcel-plugin-typescript": "^0.7.1",
+    "prettier": "^1.13.4",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.1"
+  }
+}

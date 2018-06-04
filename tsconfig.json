@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["dom", "esnext", "es2017"],
+    "strict": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "app-store": ["src/store/index.ts"],
+      "app-api": ["src/api/index.ts"]
+    }
+  }
+}

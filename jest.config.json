@@ -1,0 +1,17 @@
+{
+    "setupFiles": [
+      "<rootDir>/jest/test-shim.js",
+      "<rootDir>/jest/test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/jest/test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(test|spec).(ts|tsx|js)"
+    ]
+}
