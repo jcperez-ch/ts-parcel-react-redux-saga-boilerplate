@@ -22,5 +22,5 @@ export class Root extends React.Component<RootProps> {
 
 export default connect(
     ({ ready }: ReduxState) => ({ ready }),
-    { setAppAsReady: actionCreators.setAppAsReady },
+    { setAppAsReady: actionCreators.setAppAsReady }
 )(Root);

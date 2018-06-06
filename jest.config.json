@@ -8,6 +8,10 @@
       "tsx",
       "js"
     ],
+    "moduleNameMapper": {
+        "app-api": "<rootDir>/src/api",
+        "app-store": "<rootDir>/src/store"
+    },
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/jest/test-preprocessor.js"
     },

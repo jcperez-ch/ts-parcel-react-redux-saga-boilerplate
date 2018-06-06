@@ -11,11 +11,7 @@ const sagaMiddleware = reduxSaga();
 export const startStore = () => createStore(
     reducer,
     {},
-    composeEnhancers(
-        applyMiddleware(
-            sagaMiddleware,
-        ),
-    ),
+    composeEnhancers(applyMiddleware(sagaMiddleware))
 );
 
 const store = startStore();
