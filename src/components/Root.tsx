@@ -1,26 +1,33 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { ReduxState, ready as actionCreators } from 'app-store';
+import { ReduxState, stories as actionCreators } from 'app-store';
 import App from './App';
+import Busy from './materials/Busy';
 
 interface RootProps {
-    setAppAsReady: () => any;
+    startApp: () => any;
     ready: boolean;
 }
 
 export class Root extends React.Component<RootProps> {
     componentDidMount() {
-        const { ready, setAppAsReady } = this.props;
+        const { ready, startApp } = this.props;
         if (!ready) {
-            setAppAsReady();
+            startApp();
         }
     }
     render(): JSX.Element {
-        return <App />;
+        const { ready } = this.props;
+        return (
+            <React.Fragment>
+                <App />
+                <Busy busy={!ready} />
+            </React.Fragment>
+        );
     }
 }
 
 export default connect(
     ({ ready }: ReduxState) => ({ ready }),
-    { setAppAsReady: actionCreators.setAppAsReady }
+    { startApp: actionCreators.fetchTopStories }
 )(Root);

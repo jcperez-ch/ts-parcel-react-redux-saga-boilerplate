@@ -4,7 +4,7 @@
   "description": "Automat.ai Homework",
   "main": "src/index.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
+    "start": "parcel --no-hmr ./src/index.html",
     "build": "parcel build ./src/index.html --public-url '/'",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "test": "jest --config jest.config.json",

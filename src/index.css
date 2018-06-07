@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous');
-
 body {
     font-family: 'Righteous', cursive;
+    background-color: #202020;
+    color: white;
+}
+body, html { font-size: 13px; }
+
+a, a:visited { color: #dfdfdf; }
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+    body, html { font-size: 16px; }
+}
+@media (min-width: 1201px) {
+    body, html { font-size: 24px; }
 }

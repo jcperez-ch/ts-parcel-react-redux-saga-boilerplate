@@ -4,6 +4,7 @@
     "jsRules": {},
     "rules": {
       "function-name": false,
+      "import-name": false,
       "jsx-no-lambda": false,
       "no-consecutive-blank-lines": [true, 1],
       "object-shorthand-properties-first": false,
@@ -22,7 +23,8 @@
           },
           "esSpecCompliant": true
         }
-      ]
+      ],
+      "variable-name": false
     },
     "rulesDirectory": []
   }

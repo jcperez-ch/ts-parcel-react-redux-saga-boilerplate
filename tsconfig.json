@@ -9,6 +9,8 @@
     "paths": {
       "app-store": ["src/store/index.ts"],
       "app-api": ["src/api/index.ts"]
-    }
+    },
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   }
 }
